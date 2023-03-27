@@ -6,4 +6,4 @@ print(f"A soma {a}+{b} é igual a {a+b}")
 if soma == a+b:
     print(f"A soma está correta.")
 else:
-    print(f"A soma está incorreta.")
+    print(f"A soma está incorreta. ")
