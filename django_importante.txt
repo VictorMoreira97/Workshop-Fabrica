@@ -1,0 +1,74 @@
+#Criacao de venv
+
+python -m venv "nome da virtual env"
+---------------------------------------------
+#Install django
+
+python -m pip install Django
+---------------------------------------------
+#Criacao de projeto
+
+django-admin startproject "nome do projeto" .
+---------------------------------------------
+#Criando app
+
+python manage.py startapp "nome do app"
+---------------------------------------------
+#Registrar app na settgins
+
+'nomedoapp',
+---------------------------------------------
+#Criando database
+
+python manage.py migrate (sqlite3)
+---------------------------------------------
+#Rodando projeto
+
+python manage.py runserver
+---------------------------------------------
+#Adicionar as url
+
+Ex: path('pagina1/', chiclete)
+---------------------------------------------
+#Importar o HttpResponse
+
+from django.http import HttpResponse
+---------------------------------------------
+#Criar a funcao
+
+Ex: def chiclete (request):
+    html = "<html><body><h1>Minha pagina</h1></body></html>"
+    return HttpResponse(html)
+----------------------------------------------
+#Importar a funcao para urls
+
+Ex: from fabprojeto.views import chiclete
+----------------------------------------------
+#Criacão da pasta template (Lembrar de criar dentro da pasta do app)
+
+OBS:Criar uma pasta dentro da template com nome do app
+criar um arquivo html dentro da pasta com nome do app
+-----------------------------------------------
+#Usar template para página
+
+ex: funcão (resquest)
+return render(request, template_name='fabprojeto/index.html')
+-----------------------------------------------
+#Criar model
+
+class "nome da classe"(models.Model);
+	a field que você quiser
+-----------------------------------------------
+#Criacao da migrations
+
+py .\manage.py makemigrations
+depois aplica com: py .\manage.py migrate
+-----------------------------------------------
+#Adicionar a admin
+
+from .models import "nome da class"
+-----------------------------------------------
+#Registrar com admin
+
+admin.site.register(nome da class)
+-----------------------------------------------

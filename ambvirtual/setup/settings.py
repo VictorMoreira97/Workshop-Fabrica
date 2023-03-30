@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'videogame_store_app'
-    'rest_framework'
 ]
 
 MIDDLEWARE = [
